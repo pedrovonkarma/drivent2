@@ -6,7 +6,7 @@ export const ticketIdSchema = Joi.object({
     .required(),
 });
 
-export const processPaymentSchema = Joi.object({
+export const paymentSchema = Joi.object({
   ticketId: Joi.number().required(),
   cardData: Joi.object({
     issuer: Joi.string().required(),
